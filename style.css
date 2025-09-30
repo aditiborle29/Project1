@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #121212;
+  color: #eee;
+}
+header {
+  background: linear-gradient(105deg, #4f8cff 40%, #5269f5 100%);
+  padding: 36px 0 70px 0;
+  text-align: center;
+  position: relative;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+header h1 { font-size: 2.2rem; margin: 0; color: #fff; }
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+#nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.08rem;
+  transition: color .2s;
+}
+#nav-links li a:hover {
+  color: #ffd700;
+}
+#menu-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+}
+.header-content {
+  margin-top: 30px;
+}
+.header-content .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 14px;
+  display: block;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.header-content h2 {
+  color: #fff;
+  margin: 20px 0 10px;
+  font-size: 2.3rem;
+}
+.header-content span {
+  color: #ffd700;
+}
+.subtitle { font-size: 1.13rem; letter-spacing: .5px; color: #b7e3ff; }
+
+main {
+  max-width: 900px;
+  margin: 38px auto;
+  padding: 0 20px;
+}
+section {
+  margin-bottom: 48px;
+  background: #161b22;
+  padding: 30px 22px 26px 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,30,60,.09);
+}
+section h2 { color: #4f8cff; margin-bottom: 17px; }
+.skill-cards1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 8px 0;
+}
+section h2 { color: #4f8cff; margin-bottom: 17px; }
+.skill-cards2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 8px 0;
+}
+.skill-card1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #273043;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 18px;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 10px rgba(20,60,100,.06);
+  transition: background .24s;
+}
+.skill-card2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #273043;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 18px;
+  font-size: 2rem;
+  box-shadow: 0 2px 10px rgba(20,60,100,.06);
+  transition: background .24s;
+  
+}
+.skill-card i { font-size: 1.25rem; color: #4f8cff; }
+.skill-card:hover { background: #2f3b5b; }
+
+.social-links {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #23272b;
+  color: #fff;
+  font-size: 1.45rem;
+  box-shadow: 0 2px 10px rgba(40,80,220,.03);
+  transition: background .18s, transform .2s;
+  text-decoration: none;
+}
+.social-links a.facebook:hover { background: #3b5998; color: #fff; transform: scale(1.12);}
+.social-links a.linkedin:hover { background: #0077b5; color: #fff; transform: scale(1.12);}
+.social-links a.instagram:hover { background: linear-gradient(45deg,#fd5949,#d6249f 60%,#285AEB); color: #fff; transform: scale(1.12);}
+.social-links a.whatsapp:hover { background: #25D366; color: #fff; transform: scale(1.12);}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+  margin: 0 auto;
+}
+form input, 
+form textarea {
+  padding: 11px 13px;
+  margin-bottom: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #23272b;
+  color: #fff;
+  font-size: 1rem;
+  resize: none;
+}
+form textarea { min-height: 90px; }
+form button {
+  padding: 12px 0;
+  background: #4f8cff;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.09rem;
+  cursor: pointer;
+  transition: background .22s;
+}
+form button:hover { background: #314b8b; }
+
+footer {
+  padding: 18px;
+  text-align: center;
+  background: #23272b;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 750px) {
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background: #393ed5;
+    position: absolute;
+    right: 0;
+    top: 67px;
+    width: 155px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.27);
+    z-index: 2;
+    border-radius: 0 0 0 13px;
+  }
+  #nav-links.show {
+    display: flex;
+    animation: fadeMenu .3s;
+  }
+  #menu-btn {
+    display: block;
+  }
+  section { padding: 20px 8px }
+}
+@keyframes fadeMenu {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.quick-btn i { font-size: 1.22em; }
+.quick-btn.whatsapp { background: #25D366; }
+.quick-btn.whatsapp:hover { background: #1ebe57; transform: scale(1.07);}
+.quick-btn.linkedin { background: #0077b5; }
+.quick-btn.linkedin:hover { background: #005983; transform: scale(1.07);}
+.quick-btn.instagram { background: linear-gradient(45deg,#fd5949,#d6249f,#285AEB); }
+.quick-btn.instagram:hover { filter: brightness(1.1); transform: scale(1.07);}
+
+
+
+.quick-contact {
+  margin-bottom: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.quick-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 18px;
+  border-radius: 28px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.07rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(40,80,220,0.06);
+  transition: box-shadow 0.18s, transform 0.12s, background 0.18s;
+}
+.quick-btn i { font-size: 1.22em; }
+
+.quick-btn.email    { background: #4458be; }
+.quick-btn.email:hover { background: #3c4a97; transform: scale(1.08);}
+.quick-btn.phone    { background: #23b574; }
+.quick-btn.phone:hover { background: #189e5d; transform: scale(1.08);}
+.quick-btn.whatsapp { background: #25D366; }
+.quick-btn.whatsapp:hover { background: #1ebe57; transform: scale(1.08);}
+.quick-btn.linkedin { background: #0077b5; }
+.quick-btn.linkedin:hover { background: #005983; transform: scale(1.08);}
+.quick-btn.instagram { background: linear-gradient(45deg,#fd5949,#d6249f,#285AEB); }
+.quick-btn.instagram:hover { filter: brightness(1.1); transform: scale(1.08);}
